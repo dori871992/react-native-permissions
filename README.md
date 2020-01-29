@@ -39,7 +39,6 @@ target 'YourAwesomeProject' do
 
   permissions_path = '../node_modules/react-native-permissions/ios'
 
-  pod 'Permission-BluetoothPeripheral', :path => "#{permissions_path}/BluetoothPeripheral.podspec"
   pod 'Permission-Calendars', :path => "#{permissions_path}/Calendars.podspec"
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   pod 'Permission-Contacts', :path => "#{permissions_path}/Contacts.podspec"
@@ -72,10 +71,6 @@ Then update your `Info.plist` with wanted permissions usage descriptions:
   <!-- 🚨 Keep only the permissions used in your app 🚨 -->
 
   <key>NSAppleMusicUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSBluetoothAlwaysUsageDescription</key>
-  <string>YOUR TEXT</string>
-  <key>NSBluetoothPeripheralUsageDescription</key>
   <string>YOUR TEXT</string>
   <key>NSCalendarsUsageDescription</key>
   <string>YOUR TEXT</string>
@@ -360,7 +355,6 @@ PERMISSIONS.ANDROID.WRITE_EXTERNAL_STORAGE;
 
 // iOS permissions
 
-PERMISSIONS.IOS.BLUETOOTH_PERIPHERAL;
 PERMISSIONS.IOS.CALENDARS;
 PERMISSIONS.IOS.CAMERA;
 PERMISSIONS.IOS.CONTACTS;
